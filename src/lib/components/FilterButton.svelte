@@ -1,13 +1,16 @@
 <script lang="ts">
+  // 1. Aggiungiamo 'onclick' alle Props che il bottone può ricevere
   interface Props {
     label?: string;
     active?: boolean;
+    onclick?: () => void;
   }
 
-  let { label = "Filter", active = false }: Props = $props();
+  // 2. Estraiamo 'onclick'
+  let { label = "Filter", active = false, onclick }: Props = $props();
 </script>
 
-<button class="filter-button" class:active>
+<button class="filter-button" class:active {onclick}>
   {label}
 </button>
 

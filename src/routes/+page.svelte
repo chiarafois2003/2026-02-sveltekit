@@ -20,7 +20,7 @@
     img10: "/images/Polpette.jpg",
     img11: "/images/Cotoletta.jpg",
     img12: "/images/Cordonbleu.jpg",
-    img13: "/images/Bignè.jpg",
+    img13: "/images/Bigne.jpg",
     img14: "/images/Cardinali.jpg",
     img15: "/images/Crostata.jpg",
     img16: "/images/Cookies.jpg",
@@ -62,8 +62,14 @@
 <main class="page">
   <TopBar />
   <HeroSection />
-  <FilterBar activeFilter={activeFilter} on:change={(event) => (activeFilter = event.detail)} />
-  
+  <FilterBar 
+    activeFilter={activeFilter} 
+    onchange={(nuovoFiltro) => {
+      console.log("Il filtro richiesto è:", nuovoFiltro);
+      activeFilter = nuovoFiltro;
+    }} 
+  />
+
   <div class="grid">
     {#each filteredDishes as dish (dish.title)}
       <Card image={dish.image} title={dish.title} category={dish.category} />
@@ -91,7 +97,7 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-3);
+    gap: var(--spacing-6);
     padding: var(--spacing-6) var(--spacing-11);
     width: 100%;
     box-sizing: border-box;
