@@ -36,7 +36,7 @@
     { title: "Mezze Maniche alla Carbonara", category: "Pasta", image: images.img5 },
     { title: "Malloreddus", category: "Pasta", image: images.img6 },
     { title: "Ricotta and Spinach Ravioli", category: "Pasta", image: images.img7 },
-    { title: "Pappardelle stuffed with Potatoes and Sausage", category: "Pasta", image: images.img8 },
+    { title: "Potatoes and Sausage Stuffed Pappardelle", category: "Pasta", image: images.img8 },
     { title: "Roast Pork Loin", category: "Mains", image: images.img9 },
     { title: "Beef Meatballs", category: "Mains", image: images.img10 },
     { title: "Cotoletta", category: "Mains", image: images.img11 },
@@ -45,7 +45,7 @@
     { title: "Cardinali Pastries", category: "Desserts", image: images.img14 },
     { title: "Jam Tart", category: "Desserts", image: images.img15 },
     { title: "Crumble Cookies", category: "Desserts", image: images.img16 },
-    { title: "Sbrisolona with Custard and Strawberries", category: "Desserts", image: images.img17 },
+    { title: "Custard and Strawberries Sbrisolona", category: "Desserts", image: images.img17 },
     { title: "Sacher Torte", category: "Desserts", image: images.img18 },
   ];
 

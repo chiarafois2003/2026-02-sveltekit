@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     padding: var(--spacing-1) var(--spacing-3);
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-s);
     border: none;
     background-color: var(--color-filters-bg-default);
     color: var(--color-filters-text-default);
@@ -35,7 +35,7 @@
     background-color: var(--color-filters-bg-active);
   }
 
-  .filter-button.active {
-    background-color: var(--color-filters-bg-active);
-  }
-</style>
+.filter-button.active {
+    background-color: var(--brand-500);
+    font-weight: 600;
+  }</style>

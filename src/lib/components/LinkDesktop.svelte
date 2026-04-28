@@ -38,6 +38,13 @@
     gap: var(--spacing-1);
     text-decoration: none;
     color: var(--color-link-default);
+    /* 1. Aggiungiamo una transizione morbida */
+    transition: color 0.2s ease; 
+  }
+
+  /* 2. Regola magica: quando il mouse passa sopra, usa il colore Brand */
+  .link-desktop:hover {
+    color: var(--color-link-hover);
   }
 
   .link-content {
@@ -51,7 +58,8 @@
     font-weight: 500;
     font-size: 24px;
     white-space: nowrap;
-    color: var(--color-link-default);
+    /* 3. Diciamo al testo di ereditare il colore del genitore (che cambierà in hover) */
+    color: inherit; 
   }
 
   .icon {

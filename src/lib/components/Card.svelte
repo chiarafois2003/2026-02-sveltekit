@@ -39,6 +39,7 @@
 
   .card:hover {
     transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
 
   .card-image {
@@ -54,6 +55,7 @@
     display: block;
   }
 
+  /* --- SEZIONE CONTENUTO --- */
   .card-content {
     display: flex;
     align-items: center;
@@ -61,6 +63,14 @@
     padding: var(--spacing-3) var(--spacing-3) 0 var(--spacing-3);
     width: 100%;
     box-sizing: border-box;
+    /* Transizione per il cambio colore dello sfondo */
+    transition: background-color 0.3s ease, padding-bottom 0.3s ease;
+  }
+
+  /* Hover: il background si riempie del colore accento */
+  .card:hover .card-content {
+    background-color: var(--brand-500);
+    padding-bottom: var(--spacing-3); /* Riequilibra visivamente lo spazio */
   }
 
   .card-text {
@@ -74,16 +84,29 @@
     white-space: nowrap;
   }
 
+  /* --- TITOLO E CATEGORIA --- */
   .title {
     margin: 0;
     color: var(--color-content-primary);
+    transition: color 0.3s ease;
   }
 
   .category {
     margin: 0;
     color: var(--color-content-secondary);
+    transition: color 0.3s ease;
   }
 
+  /* Hover: adattamento dei colori dei testi per il contrasto */
+  .card:hover .title {
+    color: var(--neutral-50); /* Titolo bianco per leggibilità */
+  }
+
+  .card:hover .category {
+    color: var(--brand-100); /* Categoria azzurro chiaro per staccare leggermente */
+  }
+
+  /* --- FRECCIA --- */
   .card-arrow {
     display: flex;
     align-items: center;
@@ -92,6 +115,18 @@
     height: 24px;
     flex-shrink: 0;
     color: var(--color-content-primary);
+    
+    /* Stato iniziale: invisibile e spostata */
+    opacity: 0; 
+    transform: translateX(-10px); 
+    transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  }
+
+  /* Hover: la freccia appare e diventa bianca */
+  .card:hover .card-arrow {
+    opacity: 1; 
+    transform: translateX(0); 
+    color: var(--neutral-50); 
   }
 
   .card-arrow svg {
