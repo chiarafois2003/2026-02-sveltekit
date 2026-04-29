@@ -4,30 +4,29 @@
   import FilterBar from "$lib/components/FilterBar.svelte";
   import Card from "$lib/components/Card.svelte";
   import Footer from "$lib/components/Footer.svelte";
-  import { base } from '$app/paths';
 
   let activeFilter = $state("");
 
   // Immagini collegate alla cartella static/images/
   const images = {
-    img1: `${base}/images/Coccois.jpg`,
-    img2: `${base}/images/Pizza.jpg`,
-    img3: `${base}/images/PizzaCondita.jpg`,
-    img4: `${base}/images/Frittelle.jpg`,
-    img5: `${base}/images/Carbonara.jpg`,
-    img6: `${base}/images/Malloreddus.jpg`,
-    img7: `${base}/images/Ravioli.jpg`,
-    img8: `${base}/images/Pappardelle.jpg`,
-    img9: `${base}/images/Arrosto.jpg`,
-    img10: `${base}/images/Polpette.jpg`,
-    img11: `${base}/images/Cotoletta.jpg`,
-    img12: `${base}/images/Cordonbleu.jpg`,
-    img13: `${base}/images/Bigne.jpg`,
-    img14: `${base}/images/Cardinali.jpg`,
-    img15: `${base}/images/Crostata.jpg`,
-    img16: `${base}/images/Cookies.jpg`,
-    img17: `${base}/images/Sbriciolona.jpg`,
-    img18: `${base}/images/Sacher.jpg`,
+    img1: "/images/Coccois.jpg",
+    img2: "/images/Pizza.jpg",
+    img3: "/images/PizzaCondita.jpg",
+    img4: "/images/Frittelle.jpg",
+    img5: "/images/Carbonara.jpg",
+    img6: "/images/Malloreddus.jpg",
+    img7: "/images/Ravioli.jpg",
+    img8: "/images/Pappardelle.jpg",
+    img9: "/images/Arrosto.jpg",
+    img10: "/images/Polpette.jpg",
+    img11: "/images/Cotoletta.jpg",
+    img12: "/images/Cordonbleu.jpg",
+    img13: "/images/Bigne.jpg",
+    img14: "/images/Cardinali.jpg",
+    img15: "/images/Crostata.jpg",
+    img16: "/images/Cookies.jpg",
+    img17: "/images/Sbriciolona.jpg",
+    img18: "/images/Sacher.jpg",
   };
 
   const dishes = [
