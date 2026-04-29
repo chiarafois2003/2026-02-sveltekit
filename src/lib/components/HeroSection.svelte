@@ -24,7 +24,7 @@
     font-family: var(--font-primary);
     font-weight: 500;
     /* La magia di clamp: minimo 32px, cresce col display, massimo 64px */
-    font-size: clamp(32px, 6vw, 64px);
+    font-size: clamp(28px, 6vw, 64px);
     color: var(--color-content-primary);
     line-height: 1.2;
     max-width: 1352px;
