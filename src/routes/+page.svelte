@@ -3,6 +3,7 @@
   import HeroSection from "$lib/components/HeroSection.svelte";
   import FilterBar from "$lib/components/FilterBar.svelte";
   import Card from "$lib/components/Card.svelte";
+  import Footer from "$lib/components/Footer.svelte";
 
   let activeFilter = $state("");
 
@@ -75,6 +76,14 @@
       <Card image={dish.image} title={dish.title} category={dish.category} />
     {/each}
   </div>
+
+  <div class="grid">
+    {#each filteredDishes as dish (dish.title)}
+      <Card image={dish.image} title={dish.title} category={dish.category} />
+    {/each}
+  </div>
+  
+  <Footer />
 </main>
 
 <style>

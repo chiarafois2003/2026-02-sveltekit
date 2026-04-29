@@ -1,5 +1,6 @@
 <script lang="ts">
   import LinkDesktop from "./LinkDesktop.svelte";
+  import ThemeToggle from "./ThemeToggle.svelte";
 </script>
 
 <header class="top-bar">
@@ -8,6 +9,7 @@
   </div>
   <nav class="nav">
     <LinkDesktop text="About" leadingIcon={false} trailingIcon={false} href="/" />
+    <ThemeToggle />
   </nav>
 </header>
 
