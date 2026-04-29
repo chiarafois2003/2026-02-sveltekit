@@ -10,7 +10,7 @@
 
 <div class="card">
   <div class="card-image">
-    <img src={image} alt={title} />
+    <img src={image} alt={title} loading="lazy" decoding="async" />
   </div>
   <div class="card-content">
     <div class="card-text">
