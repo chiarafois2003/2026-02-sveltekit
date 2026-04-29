@@ -4,29 +4,30 @@
   import FilterBar from "$lib/components/FilterBar.svelte";
   import Card from "$lib/components/Card.svelte";
   import Footer from "$lib/components/Footer.svelte";
+  import { base } from '$app/paths';
 
   let activeFilter = $state("");
 
   // Immagini collegate alla cartella static/images/
   const images = {
-    img1: "/images/Coccois.jpg",
-    img2: "/images/Pizza.jpg",
-    img3: "/images/PizzaCondita.jpg",
-    img4: "/images/Frittelle.jpg",
-    img5: "/images/Carbonara.jpg",
-    img6: "/images/Malloreddus.jpg",
-    img7: "/images/Ravioli.jpg",
-    img8: "/images/Pappardelle.jpg",
-    img9: "/images/Arrosto.jpg",
-    img10: "/images/Polpette.jpg",
-    img11: "/images/Cotoletta.jpg",
-    img12: "/images/Cordonbleu.jpg",
-    img13: "/images/Bigne.jpg",
-    img14: "/images/Cardinali.jpg",
-    img15: "/images/Crostata.jpg",
-    img16: "/images/Cookies.jpg",
-    img17: "/images/Sbriciolona.jpg",
-    img18: "/images/Sacher.jpg",
+    img1: `${base}/images/Coccois.webp`,
+    img2: `${base}/images/Pizza.webp`,
+    img3: `${base}/images/PizzaCondita.webp`,
+    img4: `${base}/images/Frittelle.webp`,
+    img5: `${base}/images/Carbonara.webp`,
+    img6: `${base}/images/Malloreddus.webp`,
+    img7: `${base}/images/Ravioli.webp`,
+    img8: `${base}/images/Pappardelle.webp`,
+    img9: `${base}/images/Arrosto.webp`,
+    img10: `${base}/images/Polpette.webp`,
+    img11: `${base}/images/Cotoletta.webp`,
+    img12: `${base}/images/Cordonbleu.webp`,
+    img13: `${base}/images/Bigne.webp`,
+    img14: `${base}/images/Cardinali.webp`,
+    img15: `${base}/images/Crostata.webp`,
+    img16: `${base}/images/Cookies.webp`,
+    img17: `${base}/images/Sbriciolona.webp`,
+    img18: `${base}/images/Sacher.webp`,
   };
 
   const dishes = [
