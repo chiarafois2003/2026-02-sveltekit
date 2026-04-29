@@ -38,4 +38,13 @@
 .filter-button.active {
     background-color: var(--brand-500);
     font-weight: 600;
-  }</style>
+  }
+  
+  @media (max-width: 768px) {
+    .filter-button {
+      font-size: 14px; /* Testo più piccolo */
+      padding: 6px 16px; /* Pillola più proporzionata */
+      white-space: nowrap; /* Impedisce al testo di andare a capo */
+    }
+  }
+  </style>

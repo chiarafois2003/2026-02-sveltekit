@@ -31,4 +31,16 @@
     width: 100%;
     box-sizing: border-box;
   }
+
+  @media (max-width: 768px) {
+    .filter-bar {
+      padding: 0 var(--spacing-4); /* Allinea ai margini della griglia */
+      overflow-x: auto; /* Permette lo scorrimento orizzontale col dito */
+      scrollbar-width: none; /* Nasconde la barra di scorrimento visiva su Firefox */
+    }
+    
+    .filter-bar::-webkit-scrollbar {
+      display: none; /* Nasconde la barra visiva su Chrome/Safari/iOS */
+    }
+  }
 </style>

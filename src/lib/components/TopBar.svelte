@@ -31,4 +31,12 @@
     align-items: center;
     gap: var(--spacing-3);
   }
+
+  /* --- REGOLE MOBILE --- */
+  @media (max-width: 768px) {
+    .top-bar {
+      /* Allineiamo i margini laterali a quelli della Hero e della Griglia (spacing-4) */
+      padding: var(--spacing-4) var(--spacing-4);
+    }
+  }
 </style>

@@ -106,6 +106,8 @@
   @media (max-width: 768px) {
     .grid {
       grid-template-columns: 1fr;
+      padding: var(--spacing-4) var(--spacing-4); /* Margini laterali più piccoli */
+      row-gap: var(--spacing-8); /* Più spazio verticale tra un piatto e l'altro */
     }
   }
 </style>

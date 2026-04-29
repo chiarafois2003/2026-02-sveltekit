@@ -133,4 +133,65 @@
     width: 100%;
     height: 100%;
   }
-</style>
+
+/* --- REGOLE MOBILE AGGIORNATE --- */
+  @media (max-width: 768px) {
+    .card {
+      /* Disabilita l'animazione al tap per mobile */
+      transition: none; 
+      /* I bordi tondi e l'overflow: hidden vengono mantenuti dal CSS desktop */
+    }
+    
+    .card:hover {
+      transform: none;
+      box-shadow: none;
+    }
+
+    .card-content {
+      /* Aggiungiamo un leggero padding laterale per evitare che il testo venga tagliato dagli angoli */
+      padding: var(--spacing-2) var(--spacing-2) var(--spacing-1) var(--spacing-2); 
+      display: block; /* Gestisce il text-overflow del testo */
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden; 
+      text-overflow: ellipsis; /* Aggiunge i puntini se troppo lungo */
+      white-space: nowrap; 
+    }
+
+    /* Annulliamo l'effetto sfondo azzurro al tap su mobile */
+    .card:hover .card-content {
+      background-color: transparent;
+      padding-bottom: var(--spacing-1); /* Mantiene il bilanciamento col padding base */
+    }
+
+    .card-text {
+      font-size: 16px;
+      display: inline; /* Tratta titolo e categoria come testo continuo */
+      color: inherit;
+    }
+
+    .title, .category {
+      margin: 0;
+      display: inline; 
+      font-size: inherit;
+    }
+
+    /* Mantieni i colori originali al tap */
+    .title {
+      color: var(--color-content-primary);
+    }
+    .category {
+      color: var(--color-content-secondary);
+    }
+
+    .card:hover .title { color: var(--color-content-primary); }
+    .card:hover .category { color: var(--color-content-secondary); }
+
+    /* Nascondi la freccia completamente su mobile */
+    .card-arrow {
+      display: none; 
+    }
+  }
+  
+  </style>
+
