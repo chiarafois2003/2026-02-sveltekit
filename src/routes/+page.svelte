@@ -76,12 +76,6 @@
       <Card image={dish.image} title={dish.title} category={dish.category} />
     {/each}
   </div>
-
-  <div class="grid">
-    {#each filteredDishes as dish (dish.title)}
-      <Card image={dish.image} title={dish.title} category={dish.category} />
-    {/each}
-  </div>
   
   <Footer />
 </main>
